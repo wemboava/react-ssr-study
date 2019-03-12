@@ -7,7 +7,7 @@ const Home = ({ repositories }) => {
         <div>
             <Link href='sobre'>Sobre</ Link>
             {
-                repositories.map(repo => 
+                repositories.map(repo =>
                     <h3 key={repo.id}>{ repo.name }</h3>
                 )
             }
@@ -19,6 +19,7 @@ Home.getInitialProps = async () => {
     const response = await fetch('https://api.github.com/orgs/rocketseat/repos')
         , repositories = await response.json()
 
+        console.log(repositories)
     return { repositories }
 }
 

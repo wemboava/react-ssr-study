@@ -1218,11 +1218,12 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
         case 5:
           repositories = _context.sent;
+          console.log(repositories);
           return _context.abrupt("return", {
             repositories: repositories
           });
 
-        case 7:
+        case 8:
         case "end":
           return _context.stop();
       }
